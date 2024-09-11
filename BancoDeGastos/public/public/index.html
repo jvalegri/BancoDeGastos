@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Gastos</h1>
+        <form id="gastoForm">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" step="0.01" required>
+
+            <label for="forma_pagamento">Forma de Pagamento:</label>
+            <select id="forma_pagamento" name="forma_pagamento" required>
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
+                <!--<option value="dinheiro">Dinheiro</option>-->
+                <option value="pix">Pix</option>
+    
+            </select>
+
+            <label for="gastante">Quem Gastou:</label>
+            <input type="text" id="gastante" name="gastante" required>
+
+            <button type="submit">Adicionar Gasto</button>
+        </form>
+        <div id="mensagem"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
